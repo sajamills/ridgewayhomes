@@ -1,6 +1,6 @@
-# Ridgeway Homes — Website Template
+# Brad Baggett Homes — Website Template
 
-Next.js site for Ridgeway Homes / John W. Ridgeway Contractors, LLC.
+Next.js site for Brad Baggett Homes, LLC.
 Deploy to Vercel in minutes.
 
 ## Deploy
@@ -11,10 +11,13 @@ npm install
 vercel
 ```
 
+## Reference
+Original site: https://www.bradbaggetthomes.com/
+
 ## Swap in before pitching
 - [ ] `public/hero-bg.jpg` — job site or completed home photo
 - [ ] 6 project photos in the Our Work grid (pages/index.js)
-- [ ] Real photo of John Jr. in About.js avatar
+- [ ] Real photo of Brad Baggett in About.js avatar
 - [ ] Wire contact form in Contact.js to Formspree
 
 ## Colors
@@ -26,4 +29,4 @@ vercel
 | `--cream`    | `#F5F1EA` | Background    |
 
 Built by Sam Miller · 501-680-5793
-# ridgewayhomes
+# bradbaggett

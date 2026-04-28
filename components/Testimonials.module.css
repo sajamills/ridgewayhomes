@@ -1,0 +1,14 @@
+.section { padding: var(--section-pad); background: #1A1A1A; }
+.header { margin-bottom: 3.5rem; }
+.heading { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: clamp(2rem, 3.5vw, 3rem); line-height: 1.12; color: #F5F1EA; }
+.rule { width: 48px; height: 2px; background: #8B2020; margin: 1.25rem 0; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+.card { background: rgba(255,255,255,0.03); border: 1px solid rgba(245,241,234,0.06); padding: 2.5rem 2rem; animation: fadeUp 0.6s cubic-bezier(.22,.68,0,1.2) both; transition: background 0.2s; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+.card:hover { background: rgba(139,32,32,0.12); }
+.quoteIcon { font-family: 'Cormorant Garamond', serif; font-size: 5rem; line-height: 0.6; color: #8B2020; opacity: 0.5; margin-bottom: 1.5rem; display: block; }
+.quote { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 300; font-style: italic; line-height: 1.7; color: rgba(245,241,234,0.85); margin-bottom: 2rem; }
+.author { display: flex; flex-direction: column; gap: 3px; }
+.author strong { font-size: 13px; font-weight: 500; letter-spacing: 0.05em; color: #D4AF5A; }
+.author span { font-size: 12px; color: rgba(245,241,234,0.35); letter-spacing: 0.06em; }
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr; gap: 1rem; } }

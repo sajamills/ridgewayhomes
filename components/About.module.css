@@ -1,0 +1,20 @@
+.section { padding: var(--section-pad); background: var(--white); }
+.layout { display: grid; grid-template-columns: 1fr 1.3fr; gap: 5rem; align-items: start; }
+.imgCol { position: relative; }
+.imgPlaceholder { aspect-ratio: 3/4; background: linear-gradient(145deg, #ECE7DC 0%, #DDD6C8 100%); display: flex; align-items: center; justify-content: center; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--charcoal); opacity: 0.4; }
+.founded { position: absolute; bottom: -1.5rem; right: -1.5rem; background: var(--red); color: var(--cream); padding: 1.5rem 1.75rem; text-align: center; }
+.founded strong { display: block; font-size: 10px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; opacity: 0.7; margin-bottom: 4px; }
+.founded span { font-family: var(--font-display); font-size: 2.5rem; font-weight: 300; line-height: 1; }
+.body { font-size: 15px; line-height: 1.8; color: var(--text-muted); margin-bottom: 1.25rem; }
+.team { background: var(--cream); border: 0.5px solid rgba(20,20,20,0.1); padding: 1.5rem; margin: 2rem 0; }
+.teamCard { display: flex; gap: 1.25rem; align-items: flex-start; }
+.avatar { width: 52px; height: 52px; background: var(--charcoal); color: var(--cream); display: flex; align-items: center; justify-content: center; font-family: var(--font-display); font-size: 1rem; font-weight: 500; flex-shrink: 0; }
+.teamCard strong { display: block; font-family: var(--font-display); font-size: 1.15rem; font-weight: 500; color: var(--charcoal); margin-bottom: 2px; }
+.teamCard span { display: block; font-size: 10px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+.teamCard p { font-size: 13px; line-height: 1.65; color: var(--text-muted); }
+.locations { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.loc { display: flex; flex-direction: column; gap: 4px; padding: 1rem 1.25rem; background: var(--cream); border-left: 3px solid var(--red); }
+.locLabel { font-size: 10px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 2px; }
+.loc span { font-size: 13px; color: var(--text-muted); }
+@media (max-width: 900px) { .layout { grid-template-columns: 1fr; gap: 3rem; } .imgCol { max-width: 400px; } .founded { right: 0; } }
+@media (max-width: 560px) { .locations { grid-template-columns: 1fr; } }

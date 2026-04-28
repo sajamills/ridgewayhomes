@@ -1,0 +1,15 @@
+.footer { background: #141414; padding: 5rem 2rem 2rem; }
+.top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; padding-bottom: 3rem; border-bottom: 1px solid rgba(245,241,234,0.06); max-width: 1200px; margin: 0 auto; }
+.brand { display: flex; gap: 14px; align-items: flex-start; }
+.logoMark { width: 42px; height: 42px; background: #8B2020; color: #F5F1EA; display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 16px; font-weight: 500; flex-shrink: 0; }
+.brand strong { font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 500; color: #F5F1EA; display: block; margin-bottom: 2px; }
+.brand em { font-family: 'DM Sans', sans-serif; font-style: normal; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(245,241,234,0.35); display: block; margin-bottom: 8px; }
+.brand p { font-size: 12px; color: rgba(245,241,234,0.25); }
+.links { display: flex; flex-direction: column; gap: 10px; }
+.links span:first-child { font-size: 10px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #B8973A; margin-bottom: 4px; }
+.links a { font-size: 13px; color: rgba(245,241,234,0.5); transition: color 0.2s; }
+.links a:hover { color: #F5F1EA; }
+.bottom { max-width: 1200px; margin: 2rem auto 0; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
+.bottom p { font-size: 11.5px; color: rgba(245,241,234,0.2); letter-spacing: 0.04em; }
+@media (max-width: 900px) { .top { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .top { grid-template-columns: 1fr; gap: 2rem; } .bottom { flex-direction: column; } }

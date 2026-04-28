@@ -1,0 +1,29 @@
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 1.5rem 2rem; transition: background 0.3s, padding 0.3s, box-shadow 0.3s; }
+.nav.scrolled { background: rgba(245,241,234,0.97); padding: 1rem 2rem; box-shadow: 0 1px 0 rgba(20,20,20,0.1); backdrop-filter: blur(8px); }
+.inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+.logo { display: flex; align-items: center; gap: 12px; }
+.logoMark { width: 38px; height: 38px; background: #8B2020; color: #F5F1EA; display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 15px; font-weight: 500; letter-spacing: 0.05em; flex-shrink: 0; }
+.logoText { display: flex; flex-direction: column; line-height: 1.15; }
+.logoText strong { font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 16px; color: #F5F1EA; letter-spacing: 0.04em; transition: color 0.3s; }
+.logoText em { font-family: 'DM Sans', sans-serif; font-style: normal; font-size: 10px; font-weight: 300; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(245,241,234,0.55); transition: color 0.3s; }
+.nav.scrolled .logoText strong { color: #141414; }
+.nav.scrolled .logoText em { color: #6B6B6B; }
+.links { list-style: none; display: flex; align-items: center; gap: 2rem; }
+.links a { font-size: 12px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(245,241,234,0.85); transition: color 0.2s; }
+.links a:hover { color: #D4AF5A; }
+.nav.scrolled .links a { color: #141414; }
+.nav.scrolled .links a:hover { color: #8B2020; }
+.navCta { background: #8B2020 !important; color: #F5F1EA !important; padding: 10px 22px; font-size: 11px !important; letter-spacing: 0.12em !important; transition: background 0.2s !important; }
+.navCta:hover { background: #A32828 !important; color: #F5F1EA !important; }
+.burger { display: none; flex-direction: column; gap: 5px; padding: 4px; }
+.burger span { display: block; width: 22px; height: 1.5px; background: #F5F1EA; transition: transform 0.25s, opacity 0.25s, background 0.3s; transform-origin: center; }
+.nav.scrolled .burger span { background: #141414; }
+.x1 { transform: translateY(6.5px) rotate(45deg) !important; }
+.x2 { opacity: 0 !important; }
+.x3 { transform: translateY(-6.5px) rotate(-45deg) !important; }
+@media (max-width: 768px) {
+  .burger { display: flex; }
+  .links { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: #F5F1EA; flex-direction: column; justify-content: center; gap: 2.5rem; transform: translateX(100%); transition: transform 0.35s cubic-bezier(.22,.68,0,1.2); pointer-events: none; }
+  .links.open { transform: translateX(0); pointer-events: all; }
+  .links a { font-size: 15px !important; }
+}
